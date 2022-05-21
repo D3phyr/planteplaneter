@@ -148,6 +148,16 @@ header .hcontainer .header__navigation .header__nav-item {
   font-size: 12px;
   line-height: 14px;
   color: #000000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+header .hcontainer .header__navigation .header__nav-item:hover {
+  font-size: 16px;
 }
 
 .parallax {
@@ -198,6 +208,8 @@ header .hcontainer .header__navigation .header__nav-item {
   background-color: #3aad5b;
   opacity: 0.3;
   z-index: 2;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .shop .shop__container .shop__item-row .shop__item .shop__background-workshops {
@@ -281,6 +293,14 @@ header .hcontainer .header__navigation .header__nav-item {
   line-height: 73px;
   color: #FFFFFF;
   z-index: 3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.shop .shop__container .shop__item-row .shop__item:hover .shop__gradient {
+  opacity: 0;
 }
 
 .shop .shop__container .shop__center {
@@ -301,6 +321,8 @@ header .hcontainer .header__navigation .header__nav-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
 }
 
 .shop .shop__container .shop__center .shop__center-text {
@@ -312,4 +334,278 @@ header .hcontainer .header__navigation .header__nav-item {
   color: #3A6516;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.shop .shop__container .shop__center:hover {
+  border: #3A6516 solid 1px;
+  border-radius: 50%;
+}
+
+.quote {
+  width: 100%;
+  height: 351px;
+}
+
+.quote .quote__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quote .quote__container .quote__text-box {
+  padding: 65px 120px 50px 120px;
+  background: rgba(250, 250, 250, 0.9);
+  border-radius: 21px;
+  z-index: 1;
+  margin: 84px 0 0 0;
+  position: relative;
+}
+
+.quote .quote__container .quote__text-box .quote__text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.quote .quote__container .quote__text-box .quote__hooks {
+  position: absolute;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+  top: 10px;
+  left: 200px;
+}
+
+.quote .quote__container .quote__img {
+  z-index: 0;
+  position: absolute;
+  right: 0px;
+  width: 654px;
+  height: 351px;
+  background-image: url(/planteplaneter/assets/quote.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.quote .quote__container .quote__img .quote__gradient {
+  position: absolute;
+  width: 654px;
+  height: 351px;
+  background-color: #3aad5b;
+  opacity: 0.3;
+}
+
+.contact {
+  margin: 100px 0 0 0;
+  width: 100%;
+  background: rgba(166, 186, 150, 0.42);
+  -webkit-box-shadow: 0px -7px 5px 0px rgba(34, 60, 80, 0.2) inset;
+          box-shadow: 0px -7px 5px 0px rgba(34, 60, 80, 0.2) inset;
+}
+
+.contact .contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 0 0 0;
+  position: relative;
+}
+
+.contact .contact__container .contact__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  z-index: 1;
+}
+
+.contact .contact__container .contact__navigation .contact__nav-item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.contact .contact__container .contact__navigation .contact__nav-item:hover {
+  color: #ffffff;
+}
+
+.contact .contact__container .contact__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.contact .contact__container .contact__info .contact__info-item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 21px;
+  color: #000000;
+  z-index: 1;
+}
+
+.contact .contact__container .contact__registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.contact .contact__container .contact__registration .contact__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  z-index: 1;
+}
+
+.contact .contact__container .contact__registration .contact__input {
+  padding: 0 0 0 5px;
+  background: #A6BA96;
+  width: 368px;
+  height: 40px;
+  font-size: 25px;
+  z-index: 1;
+  color: white;
+}
+
+.contact .contact__container .contact__registration .contact__button {
+  margin: 0 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #D4EEDB;
+  font-family: 'Roboto';
+  font-style: bold;
+  font-weight: 275;
+  font-size: 25px;
+  line-height: 54px;
+  color: #000000;
+  width: 170px;
+  padding: 5px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 1;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.contact .contact__container .contact__registration .contact__button:hover {
+  color: white;
+  border-radius: 30px;
+  background: #A6BA96;
+}
+
+.contact .contact__container .contact__registration .contact__cards-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin: 0 0 24px auto;
+  z-index: 1;
+}
+
+.contact .contact__container .contact__registration .contact__cards-box .contact__card {
+  width: 38px;
+  height: 24px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.contact .contact__container .contact__img {
+  right: 100px;
+  bottom: -86px;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-image: url(/planteplaneter/assets/contact-plant.png);
+  background-size: 107%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+footer {
+  width: 100%;
+  height: 86px;
+}
+
+footer .fcontainer {
+  max-width: 1440px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .fcontainer .footer__copyright {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  z-index: 1;
+}
+
+footer .fcontainer .footer__terms {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  z-index: 1;
 }
