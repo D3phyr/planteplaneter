@@ -346,6 +346,7 @@ header .hcontainer .header__navigation .header__nav-item:hover {
 .quote {
   width: 100%;
   height: 351px;
+  margin: 0 0 100px 0;
 }
 
 .quote .quote__container {
@@ -608,4 +609,229 @@ footer .fcontainer .footer__terms {
   line-height: 21px;
   color: #000000;
   z-index: 1;
+}
+
+.workshops {
+  width: 100%;
+  height: 512px;
+  background-image: url(/planteplaneter/assets/workshops-page.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.workshops .workshops__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.workshops .workshops__container .workshops__text {
+  margin: 156px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.workshops .workshops__container .workshops__text .workshops__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 82px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.workshops .workshops__container .workshops__text .workshops__subtitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.workspace {
+  width: 100%;
+  margin: 80px 0 0 0;
+}
+
+.workspace .workspace__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 100px;
+}
+
+.workspace .workspace__container .workspace__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 54px;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.workspace .workspace__container .workspace__subtitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 33px;
+  line-height: 39px;
+  text-align: center;
+  color: #000000;
+}
+
+.workspace .workspace__container .workspace__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.workspace .workspace__container .workspace__item .workspace__img {
+  width: 400px;
+}
+
+.workspace .workspace__container .workspace__item .workspace__item-text {
+  margin: 40px 0 0 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.workspace .workspace__container .workspace__item .workspace__item-text .workspace__item-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 64px;
+  color: #000000;
+}
+
+.workspace .workspace__container .workspace__item_reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.registation {
+  margin: 70px 0 0 0;
+  width: 100%;
+  background-image: url(/planteplaneter/assets/registration.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.registation .registation__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registation .registation__container .registation__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 75px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registation .registation__container .registation__text .registation__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  text-align: right;
+  color: #000000;
+}
+
+.registation .registation__container .registation__text .registation__info {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  color: #000000;
+}
+
+.registation .registation__container .registation__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  margin: 110px 0 90px 0;
+}
+
+.registation .registation__container .registation__inputs input {
+  border: 1px solid #23232B;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: black;
+  background-color: transparent;
+  padding: 10px 13px;
+  width: 400px;
+}
+
+.registation .registation__container .registation__inputs .registation__textarea {
+  border: 1px solid #23232B;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: black;
+  background-color: transparent;
+  padding: 10px 13px;
+  width: 400px;
+  height: 160px;
+  resize: none;
 }
