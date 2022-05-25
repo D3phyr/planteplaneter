@@ -98,6 +98,7 @@ html {
 
 .container {
   max-width: 1440px;
+  height: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -123,6 +124,42 @@ header .hcontainer {
   padding: 0 20px;
 }
 
+header .hcontainer .header__leaf {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+header .hcontainer .header__leaves-background {
+  position: absolute;
+  background: url(/planteplaneter/assets/ygol.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 200px;
+  top: -40px;
+  left: 0;
+  z-index: 2;
+}
+
+header .hcontainer .header__leaves-background_reverse {
+  position: absolute;
+  background: url(/planteplaneter/assets/ygol-reverse.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 200px;
+  top: -40px;
+  right: 0;
+  z-index: 2;
+}
+
 header .hcontainer .header__logo {
   background-image: url(/planteplaneter/assets/logo.png);
   background-size: 100%;
@@ -139,6 +176,7 @@ header .hcontainer .header__navigation {
   display: -ms-flexbox;
   display: flex;
   gap: 54px;
+  z-index: 1;
 }
 
 header .hcontainer .header__navigation .header__nav-item {
@@ -158,6 +196,30 @@ header .hcontainer .header__navigation .header__nav-item {
 
 header .hcontainer .header__navigation .header__nav-item:hover {
   font-size: 16px;
+}
+
+header .leaf1 {
+  background: url(/planteplaneter/assets/leaf1.png);
+  top: 50px;
+  right: 150px;
+}
+
+header .leaf2 {
+  background: url(/planteplaneter/assets/leaf2.png);
+  top: 100px;
+  right: 100px;
+}
+
+header .leaf3 {
+  background: url(/planteplaneter/assets/leaf3.png);
+  top: 90px;
+  left: 80px;
+}
+
+header .leaf4 {
+  background: url(/planteplaneter/assets/leaf2.png);
+  top: 40px;
+  left: 30px;
 }
 
 .parallax {
@@ -834,4 +896,124 @@ footer .fcontainer .footer__terms {
   width: 400px;
   height: 160px;
   resize: none;
+}
+
+.twins {
+  height: 560px;
+  width: 100%;
+  background-image: url(/planteplaneter/assets/about-page.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.twins .twins__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 80px;
+}
+
+.twins .twins__container .twins__item {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 25px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 21px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+}
+
+.twins .twins__container .twins__item .twins__title {
+  margin: 20px 0 0 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+  color: #000000;
+}
+
+.twins .twins__container .twins__item .twins__text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 275;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  text-align: center;
+}
+
+.twins .twins__gradient {
+  position: absolute;
+  width: 100%;
+  height: 560px;
+  background: rgba(59, 179, 93, 0.22);
+  z-index: 0;
+}
+
+.personal {
+  width: 100%;
+}
+
+.personal .personal__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+}
+
+.personal .personal__container .personal__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.personal .personal__container .personal__item .personal__img {
+  width: 350px;
+  height: 350px;
+}
+
+.personal .personal__container .personal__item .personal__name {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  color: #000000;
+}
+
+.personal .personal__container .personal__item .personal__position {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
 }
