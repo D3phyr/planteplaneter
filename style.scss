@@ -98,6 +98,7 @@ html {
 
 .container {
     max-width: 1440px;
+    height: 100%;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -114,6 +115,42 @@ header {
         margin: 0 auto;
         padding: 0 20px;
 
+        .header__leaf{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 0;
+        }
+
+        .header__leaves-background{
+            position: absolute;
+            background: url(/planteplaneter/assets/ygol.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 300px;
+            height: 200px;
+            top: -40px;
+            left: 0;
+            z-index: 2;
+        }
+
+        .header__leaves-background_reverse{
+            position: absolute;
+            background: url(/planteplaneter/assets/ygol-reverse.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 300px;
+            height: 200px;
+            top: -40px;
+            right: 0;
+            z-index: 2;
+        }
+
         .header__logo {
             background-image: url(/planteplaneter/assets/logo.png);
             background-size: 100%;
@@ -128,6 +165,7 @@ header {
             margin: 0 0 30px 0;
             display: flex;
             gap: 54px;
+            z-index: 1;
 
             .header__nav-item {
                 font-family: 'Roboto';
@@ -145,6 +183,27 @@ header {
             }
         }
     }
+    .leaf1{
+        background: url(/planteplaneter/assets/leaf1.png);
+        top: 50px;
+        right: 150px;
+    }
+    .leaf2{
+        background: url(/planteplaneter/assets/leaf2.png);
+        top: 100px;
+        right: 100px;
+    }
+    .leaf3{
+        background: url(/planteplaneter/assets/leaf3.png);
+        top: 90px;
+        left: 80px;
+    }
+    .leaf4{
+        background: url(/planteplaneter/assets/leaf2.png);
+        top: 40px;
+        left: 30px;
+    }
+    
 }
 
 .parallax {
@@ -675,7 +734,7 @@ footer {
                 width: 400px;
             }
 
-            .registation__textarea{
+            .registation__textarea {
                 border: 1px solid #23232B;
                 border-radius: 4px;
                 font-family: 'Roboto';
@@ -689,6 +748,109 @@ footer {
                 width: 400px;
                 height: 160px;
                 resize: none;
+            }
+        }
+    }
+}
+
+
+//////////////ABOUT///////////////
+
+.twins {
+    height: 560px;
+    width: 100%;
+    background-image: url(/planteplaneter/assets/about-page.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .twins__container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+
+        .twins__item {
+            height: 300px;
+            display: flex;
+            padding: 0 25px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 21px;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 1;
+
+            .twins__title{
+                margin: 20px 0 0 0;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 26px;
+                line-height: 39px;
+                text-align: center;
+                color: #000000;
+            }
+
+            .twins__text{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 275;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000000;
+                text-align: center;
+            }
+        }
+    }
+
+    .twins__gradient {
+        position: absolute;
+        width: 100%;
+        height: 560px;
+        background: rgba(59, 179, 93, 0.22);
+        z-index: 0;
+    }
+}
+
+
+
+.personal {
+    width: 100%;
+
+    .personal__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+
+        .personal__item {
+            display: flex;
+            gap: 25px;
+            flex-direction: column;
+            align-items: center;
+
+            .personal__img {
+                width: 350px;
+                height: 350px;
+            }
+
+            .personal__name {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 72px;
+                color: #000000;
+            }
+
+            .personal__position {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                text-align: center;
+                color: #000000;
             }
         }
     }
