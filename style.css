@@ -96,6 +96,11 @@ html {
   src: url("assets/fonts/Roboto-Regular.ttf");
 }
 
+@font-face {
+  font-family: Poppins;
+  src: url("assets/fonts/Poppins-Regular.ttf");
+}
+
 .container {
   max-width: 1440px;
   height: 100%;
@@ -898,6 +903,79 @@ footer .fcontainer .footer__terms {
   resize: none;
 }
 
+.about {
+  width: 100%;
+  -webkit-box-shadow: 0px 7px 5px 0px rgba(34, 60, 80, 0.2) inset;
+          box-shadow: 0px 7px 5px 0px rgba(34, 60, 80, 0.2) inset;
+}
+
+.about .about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0 130px 0;
+}
+
+.about .about__container .about__img {
+  height: 481px;
+  width: 481px;
+  background-image: url(/planteplaneter/assets/about-page-item.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+}
+
+.about .about__container .about__img .about__subtitle {
+  top: 36px;
+  position: absolute;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 77px;
+  line-height: 116px;
+  color: #000000;
+}
+
+.about .about__container .about__img .about__subtitle_white {
+  color: white;
+}
+
+.about .about__container .about__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .about__container .about__text .about__title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.about .about__container .about__text .about__info {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 275;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
 .twins {
   height: 560px;
   width: 100%;
@@ -966,6 +1044,65 @@ footer .fcontainer .footer__terms {
   z-index: 0;
 }
 
+.kaja {
+  width: 100%;
+}
+
+.kaja .kaja__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 60px 0 200px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.kaja .kaja__container .kaja__img {
+  position: relative;
+  height: 678px;
+  width: 678px;
+  background-image: url(/planteplaneter/assets/kaja.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin: 0 0 0 auto;
+}
+
+.kaja .kaja__container .kaja__img .kaja__subtitle {
+  position: absolute;
+  margin: 200px 0 0 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 77px;
+  line-height: 116px;
+  color: #000000;
+  left: -303px;
+}
+
+.kaja .kaja__container .kaja__img .kaja__subtitle_white {
+  color: white;
+}
+
+.kaja .kaja__container .kaja__text {
+  margin: 316px 0 0 0;
+  position: absolute;
+  max-width: 700px;
+  max-height: 500px;
+  padding: 25px 60px;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 275;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
 .personal {
   width: 100%;
 }
@@ -1015,5 +1152,104 @@ footer .fcontainer .footer__terms {
   font-size: 24px;
   line-height: 36px;
   text-align: center;
+  color: #000000;
+}
+
+.spaces {
+  width: 100%;
+  -webkit-box-shadow: 0px 7px 5px 0px rgba(34, 60, 80, 0.2) inset;
+          box-shadow: 0px 7px 5px 0px rgba(34, 60, 80, 0.2) inset;
+}
+
+.spaces .spaces__container {
+  padding: 20px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.spaces .spaces__container .spaces__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 120px 0;
+}
+
+.spaces .spaces__container .spaces__item .spaces__img {
+  position: relative;
+  max-height: 430px;
+}
+
+.spaces .spaces__container .spaces__item .spaces__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 0 0 0;
+  position: relative;
+}
+
+.spaces .spaces__container .spaces__item .spaces__text-container .spaces__name {
+  position: absolute;
+  margin: 50px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 77px;
+  line-height: 116px;
+  color: black;
+  top: -245px;
+  right: 243px;
+}
+
+.spaces .spaces__container .spaces__item .spaces__text-container .spaces__name_white {
+  color: white;
+}
+
+.spaces .spaces__container .spaces__item .spaces__text-container .spaces__subtitle {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.spaces .spaces__container .spaces__item .spaces__text-container .spaces__text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 275;
+  font-size: 19px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.spaces .spaces__container .spaces__item_reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.spaces .spaces__container .spaces__title {
+  margin: 0 0 60px 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
   color: #000000;
 }

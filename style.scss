@@ -96,6 +96,11 @@ html {
     src: url("assets/fonts/Roboto-Regular.ttf")
 }
 
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/Poppins-Regular.ttf")
+}
+
 .container {
     max-width: 1440px;
     height: 100%;
@@ -115,7 +120,7 @@ header {
         margin: 0 auto;
         padding: 0 20px;
 
-        .header__leaf{
+        .header__leaf {
             width: 50px;
             height: 50px;
             position: absolute;
@@ -125,7 +130,7 @@ header {
             z-index: 0;
         }
 
-        .header__leaves-background{
+        .header__leaves-background {
             position: absolute;
             background: url(/planteplaneter/assets/ygol.png);
             background-size: 100%;
@@ -138,7 +143,7 @@ header {
             z-index: 2;
         }
 
-        .header__leaves-background_reverse{
+        .header__leaves-background_reverse {
             position: absolute;
             background: url(/planteplaneter/assets/ygol-reverse.png);
             background-size: 100%;
@@ -183,27 +188,31 @@ header {
             }
         }
     }
-    .leaf1{
+
+    .leaf1 {
         background: url(/planteplaneter/assets/leaf1.png);
         top: 50px;
         right: 150px;
     }
-    .leaf2{
+
+    .leaf2 {
         background: url(/planteplaneter/assets/leaf2.png);
         top: 100px;
         right: 100px;
     }
-    .leaf3{
+
+    .leaf3 {
         background: url(/planteplaneter/assets/leaf3.png);
         top: 90px;
         left: 80px;
     }
-    .leaf4{
+
+    .leaf4 {
         background: url(/planteplaneter/assets/leaf2.png);
         top: 40px;
         left: 30px;
     }
-    
+
 }
 
 .parallax {
@@ -756,6 +765,67 @@ footer {
 
 //////////////ABOUT///////////////
 
+.about {
+    width: 100%;
+    box-shadow: 0px 7px 5px 0px rgba(34, 60, 80, 0.2) inset;
+
+    .about__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0 130px 0;
+
+        .about__img {
+            height: 481px;
+            width: 481px;
+            background-image: url(/planteplaneter/assets/about-page-item.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            position: relative;
+
+            .about__subtitle {
+                top: 36px;
+                position: absolute;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 77px;
+                line-height: 116px;
+                color: #000000;
+            }
+
+            .about__subtitle_white {
+                color: white;
+            }
+        }
+
+        .about__text {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+
+            .about__title {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 26px;
+                line-height: 39px;
+                color: #000000;
+            }
+
+            .about__info {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 275;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000000;
+            }
+        }
+    }
+}
+
 .twins {
     height: 560px;
     width: 100%;
@@ -781,7 +851,7 @@ footer {
             gap: 20px;
             z-index: 1;
 
-            .twins__title{
+            .twins__title {
                 margin: 20px 0 0 0;
                 font-family: 'Poppins';
                 font-style: normal;
@@ -792,7 +862,7 @@ footer {
                 color: #000000;
             }
 
-            .twins__text{
+            .twins__text {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 275;
@@ -813,7 +883,59 @@ footer {
     }
 }
 
+.kaja {
+    width: 100%;
 
+    .kaja__container {
+        display: flex;
+        padding: 60px 0 200px 0;
+        justify-content: center;
+
+        .kaja__img {
+            position: relative;
+            height: 678px;
+            width: 678px;
+            background-image: url(/planteplaneter/assets/kaja.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            margin: 0 0 0 auto;
+
+            .kaja__subtitle {
+                position: absolute;
+                margin: 200px 0 0 0;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 77px;
+                line-height: 116px;
+                color: #000000;
+                left: -303px;
+            }
+
+            .kaja__subtitle_white {
+                color: white;
+            }
+        }
+
+        .kaja__text {
+            margin: 316px 0 0 0;
+            position: absolute;
+            max-width: 700px;
+            max-height: 500px;
+            padding: 25px 60px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.12);
+            border-radius: 15px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 275;
+            font-size: 20px;
+            line-height: 30px;
+            color: #000000;
+        }
+    }
+}
 
 .personal {
     width: 100%;
@@ -852,6 +974,90 @@ footer {
                 text-align: center;
                 color: #000000;
             }
+        }
+    }
+}
+
+
+///////////////////SPACES///////////////////@at-root
+
+.spaces {
+    width: 100%;
+    box-shadow: 0px 7px 5px 0px rgba(34, 60, 80, 0.2) inset;
+
+    .spaces__container {
+        padding: 20px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .spaces__item {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            margin: 0 0 120px 0;
+
+            .spaces__img {
+                position: relative;
+                max-height: 430px;
+            }
+
+            .spaces__text-container {
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+                margin: 50px 0 0 0;
+                position: relative;
+
+                .spaces__name {
+                    position: absolute;
+                    margin: 50px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 77px;
+                    line-height: 116px;
+                    color: black;
+                    top: -245px;
+                    right: 243px;
+                }
+
+                .spaces__name_white{
+                    color: white;
+                }
+
+                .spaces__subtitle {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #000000;
+                }
+
+                .spaces__text {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 275;
+                    font-size: 19px;
+                    line-height: 28px;
+                    color: #000000;
+                }
+            }
+        }
+
+        .spaces__item_reverse {
+            flex-direction: row-reverse;
+        }
+
+        .spaces__title{
+            margin: 0 0 60px 0;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 70px;
+            color: #000000;
         }
     }
 }
